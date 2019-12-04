@@ -40,6 +40,9 @@ export default {
       this.editTodo = null;
       this.beforeTodo = null;
     },
+    removeTodo(todo) {
+      return this.$store.commit('removeTodo', todo);
+    }
   },
   directives: {
     'todo-focus': function(el, binding) {
